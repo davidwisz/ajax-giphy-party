@@ -4,10 +4,49 @@
 <head>
   <meta charset="UTF-8">
   <title>Giphy Party!</title>
+  <style type="text/css">
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+    h1 {
+      color: #fff;
+    }
+    .input-text {
+      background-color: #fff;
+      color: #000;
+      padding: 10px 5px;
+    }
+    .remove-button, .submit-button {
+      padding: 10px 30px;
+      font-size: 18px;
+      color: #fff;
+    }
+    .remove-button {
+      background-color: #f00;
+    }
+
+    .submit-button {
+      background-color:#669;
+    }
+    .ajaxedImg {
+      display: inline-block;
+      max-width: 250px;
+    }
+  </style>
 </head>
 
 <body>
+  <h1>GIPHY PARTY</h1>
+<form id="search-form">
+<label for="search">Search for a gif:</label>
+<input type="text" id="search" name="search" class="input-text" placeholder="Enter a search term"/>
+<input type="submit" value="Search Giphy!" class="submit-button"/>
+</form>
+<button id="remove-button" class="remove-button">Remove Images</button>
+<div id="img-container">
 
+</div>
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.js"></script>
 <script src="app.js"></script>
