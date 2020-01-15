@@ -15,4 +15,5 @@ async function requestImage(term) {
     let imgSrc = response.data.data[0].images.downsized_large.url;
     let newImg = $('<img>').attr({'src': imgSrc, 'class': 'ajaxedImg'});
     $('#img-container').append(newImg);
+    $('#search').val('');
 }

@@ -8,9 +8,11 @@
     body {
       background-color: #000;
       color: #fff;
+      text-align: center;
     }
     h1 {
       color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
     }
     .input-text {
       background-color: #fff;
@@ -18,8 +20,8 @@
       padding: 10px 5px;
     }
     .remove-button, .submit-button {
-      padding: 10px 30px;
-      font-size: 18px;
+      padding: 8px 30px;
+      font-size: 15px;
       color: #fff;
     }
     .remove-button {
@@ -32,14 +34,23 @@
     .ajaxedImg {
       display: inline-block;
       max-width: 250px;
+      margin: 5px;
     }
+    #search-form {
+      display: inline-block;
+    }
+
+    button, .submit-button, .input-text {
+      border-radius: 5px;
+    }
+
+
   </style>
 </head>
 
 <body>
   <h1>GIPHY PARTY</h1>
 <form id="search-form">
-<label for="search">Search for a gif:</label>
 <input type="text" id="search" name="search" class="input-text" placeholder="Enter a search term"/>
 <input type="submit" value="Search Giphy!" class="submit-button"/>
 </form>
